@@ -25,7 +25,7 @@ var server = app.listen(serverPort, function() {
 });
 
 // connect to the mongodb
-var mongoURI = "mongodb://localhost:27017/heroDatabase"; // heroDatabase is the db name
+var mongoURI = "mongodb://localhost:27017/tauPassportDB";
 var MongoDB = mongoose.connect(mongoURI).connection;
 
 MongoDB.on('error', function (err) {
